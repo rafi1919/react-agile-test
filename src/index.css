@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .transition-300 {
+        @apply transition-all duration-300 ease-in-out;
+      }
+
+    .transition-500 {
+        @apply transition-all duration-500 ease-in-out;
+      }
+
+}
+
+.gradient-fire {
+    background: rgb(251,109,108);
+    background: linear-gradient(0deg, rgba(251,109,108,1) 11%, rgba(251,251,251,0) 60%);    
+}
+
+.gradient-water {
+    background: rgb(118,189,251);
+    background: linear-gradient(0deg, rgba(118,189,251,1) 11%, rgba(251,251,251,0) 60%);   
+}
+
+.gradient-leaf {
+    background: rgb(73,208,176);
+    background: linear-gradient(0deg, rgba(73,208,176,1) 11%, rgba(251,251,251,0) 60%);    
+}
+
+.gradient-elect {
+    background: rgb(245,214,80);
+    background: linear-gradient(0deg, rgba(245,214,80,1) 11%, rgba(251,251,251,0) 60%); 
+}
+
+.gradient-ghost {
+    background: rgb(100,90,164);
+    background: linear-gradient(0deg, rgba(100,90,164,1) 11%, rgba(251,251,251,0) 60%);
+}
+
+.gradient-fairy{
+    background: rgb(250,140,170);
+    background: linear-gradient(0deg, rgba(250,140,170,1) 11%, rgba(251,251,251,0) 60%);
+}
