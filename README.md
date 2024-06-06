@@ -16,5 +16,7 @@ website link https://react-agile-test.vercel.app/
 <h6>npm run dev</h6>
 
 ### `preview`
-![main](https://github.com/rafi1919/FrontendDevReactjs-Rafi_Ihsan/blob/main/public/preview/mainpage.png)
+![main](https://github.com/rafi1919/react-agile-test/blob/main/public/image/ss1.png)
+![list](https://github.com/rafi1919/react-agile-test/blob/main/public/image/ss2.png)
+
 
