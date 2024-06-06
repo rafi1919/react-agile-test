@@ -2,7 +2,7 @@ import Tag from "../Tag"
 
 const Card =({name, continent, currency, code, flag, onClick})=>{
     return(
-        <div className={`lg:w-[250px] md:w-[220px] w-[170px] lg:h-[350px] md:h-[350px] h-[300px] rounded-md border-[1px] -mb-0 hover:-mt-11 active:shadow-rose-600 transition-300 border-gray-100 p-4 shadow-md active:shadow-2xl hover:shadow-xl hover:shadow-green-600 shadow-white backdrop-blur-sm ${
+        <div className={`lg:w-[250px] md:w-[220px] w-[160px] lg:h-[350px] md:h-[350px] h-[280px] rounded-md border-[1px] -mb-0 hover:-mt-11 active:shadow-rose-600 transition-300 border-gray-100 p-4 shadow-md active:shadow-2xl hover:shadow-xl hover:shadow-green-600 shadow-white backdrop-blur-sm ${
             continent === 'Europe' ? 'gradient-water':
             continent === 'Asia' ? 'gradient-elect':
             continent === 'Africa' ? 'gradient-leaf':

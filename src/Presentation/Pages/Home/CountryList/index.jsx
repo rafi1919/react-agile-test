@@ -82,7 +82,7 @@ const Index =()=> {
         <div className="w-full bg-blackDark overflow-x-hidden flex justify-center">
             <h1 className='running-text text-[5vw] font-extrabold leading-[7rem] text-white'>DISCOVER YOUR COUNTRY</h1>
         </div>
-        <div className="px-5 md:px-3 max-w-[1200px] mx-auto ">
+        <div className="lg:px-5 px-0 max-w-[1200px] mx-auto ">
                 {/* list */}
                 {loading && (
                   <div className="flex justify-center items-center h-[70vh]">
