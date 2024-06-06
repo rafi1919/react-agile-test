@@ -44,11 +44,30 @@ const Index = () => {
         card.removeEventListener("mouseleave", handleMouseLeave);
       };
     }
+
+    // gsap.fromTo('.map',{
+    //   opacity: 0,
+    //   y: 100
+    // }, {
+    //     opacity: 1,
+    //     y: 0,
+    //     duration: 1.5,
+    //     scrollTrigger: {
+    //       trigger: ".map",
+    //       start: "top 70%",
+    //       end: "top center", 
+    //       scrub: 4,
+    //       // markers:true
+
+    //     }
+    //   });
+
+
   }, []); 
 
   return (
     <div className="w-full overflow-hidden h-full bg-rose-600 p-5 flex rounded-tr-[45px]">
-      <div ref={cardRef} className="w-full flex justify-center items-center">
+      <div ref={cardRef} className="map w-full flex justify-center items-center">
         <img src="/image/continent.png" alt="continent" className="lg:w-[600px] md:w-[400px]  w-[300px]  h-auto" />
       </div>
     </div>

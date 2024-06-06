@@ -32,16 +32,16 @@ const DisplayModal = ({ isOpen, name, onClose, fullname, capital, size, populati
             <div ref={modalRef} className="bg-white p-6 rounded-md lg:w-[1000px] w-full lg:h-fit h-[50vh] shadow-lg flex">
                 <div className='bg-rose-600 rounded-l-full w-[80px] h-[200px]'></div>
                 <div className='lg:max-w-[900px] w-full h-[200px] flex lg:flex-row md:flex-row flex-col px-2 lg:justify-around md:justify-around justify-center'>
-                    <img src={flag} alt={`${name} flag`} className='lg:w-[200px] md:w-[200px] sm:w-[150px] w-full h-auto rounded object-cover' />
+                    <img src={flag} alt={`${name} flag`} className='lg:w-[300px] md:w-[200px] sm:w-[150px] w-full h-auto rounded object-cover' />
                     <div className='flex flex-col items-center'>
                         <div className=''>
-                            <p className="font-semibold lg:text-md text-sm">Name: {name}</p>
-                            <p className="font-semibold lg:text-md text-sm">Full Name: {fullname}</p>
-                            <p className="font-semibold lg:text-md text-sm">Capital: {capital}</p>
+                            <p className="font-semibold lg:text-md text-sm">Name: <span className='font-bold'>{name}</span> </p>
+                            <p className="font-semibold lg:text-md text-sm">Full Name: <span className='font-bold'>{fullname}</span></p>
+                            <p className="font-semibold lg:text-md text-sm">Capital: <span className='font-bold'>{capital}</span></p>
                             <p className="font-semibold lg:text-md text-sm flex">Continent: <span><Tag continent={continent} /></span></p>
                             <div className='bg-green-600 rounded w-fit p-2 my-2 border-2 border-black'>
-                                <p className="font-bold lg:text-medium text-sm">Size: {size}</p>
-                                <p className="font-bold lg:text-medium text-sm">Population: {population}</p>
+                                <p className="font-bold lg:text-medium text-sm">Size:  <span className='font-bold'>{size}</span></p>
+                                <p className="font-bold lg:text-medium text-sm">Population:  <span className='font-bold'>{population}</span></p>
                             </div>
                         </div>
                     </div>

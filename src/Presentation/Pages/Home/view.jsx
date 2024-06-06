@@ -12,7 +12,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 const HomeView = () => {
   const component = useRef(null);
-  const sections = useRef([]);
 
   useEffect(() => {
     const panels = gsap.utils.toArray('.panel');
