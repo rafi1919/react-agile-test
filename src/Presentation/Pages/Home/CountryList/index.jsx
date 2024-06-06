@@ -96,8 +96,8 @@ const Index =()=> {
                       ))}
                     </div>
                   )}
-                <div className='w-full flex items-center my-5'>
-                  <button onClick={handleSplitCountry} className='mx-auto rounded-md border-[1px] hover:scale-105 active:shadow-rose-600 transition-300 border-gray-100 p-4 shadow-md shadow-white backdrop-blur-sm text-white'>Show more</button>
+                <div className='w-full flex items-center my-5 '>
+                  <button onClick={handleSplitCountry} className='mx-auto rounded-md border-[1px]  active:shadow-rose-600 transition-300 border-gray-100 p-4 shadow-md active:shadow-xl hover:shadow-lg hover:shadow-green-600 shadow-white backdrop-blur-sm text-white'>Show more</button>
                 </div>
         </div>
 
