@@ -9,13 +9,13 @@ gsap.registerPlugin(ScrollTrigger);
 // import {} from 'react-icon'
 
 const Index =()=> {
-  const {country, loading} = useCountry()
+  const {country, loading, errors} = useCountry()
   const [modalOpen, setModalOpen] = useState(false)
   const [addPage, setAddPage] = useState(20)
   const [selectedCountry, setSelectedCountry] = useState(null);
 
 
-  const splitCountry = country.slice(0, addPage)
+  const splitCountry = country? country.slice(0, addPage) : []
   const handleSplitCountry =()=>{
     setAddPage((prev) => prev + 20 )
   }
@@ -29,6 +29,7 @@ const Index =()=> {
         ease: 'linear'
       })
     }
+    
 
     gsap.fromTo('.running-text', {
       x: -300,
@@ -83,11 +84,18 @@ const Index =()=> {
         </div>
         <div className="px-5 md:px-3 max-w-[1200px] mx-auto ">
                 {/* list */}
-                {loading ? (
-                    <div className="flex justify-center items-center h-[70vh]">
-                      <img src="/image/pokeball.png" alt="pokeball" className="pokeball max-w-[100px]" />
-                    </div>
-                  ) : (
+                {loading && (
+                  <div className="flex justify-center items-center h-[70vh]">
+                    <img src="/image/pokeball.png" alt="pokeball" className="pokeball max-w-[100px]" />
+                  </div>
+                )}
+                {errors && (
+                  <div className="flex justify-center items-center h-[70vh]">
+                    <img src="/image/error.png" alt="pokeballerror" className="pokeball max-w-[100px]" />
+                    <p className='text-white font-bold'>{errors}</p>
+                  </div>
+                )}
+                {!loading && !errors && (
                     <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-2 gap-4 w-full justify-items-center'>
                       {splitCountry.length > 0 && splitCountry.map((item) => (
                         <div key={item.name}>

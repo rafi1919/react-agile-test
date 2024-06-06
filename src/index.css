@@ -46,14 +46,14 @@
   .container {
     display: flex;
     flex-wrap: nowrap;
-    width: 100%; /* Full width of main-container */
-    scroll-snap-type: x mandatory; /* Snap to the nearest horizontal scroll position */
+    width: 100%; 
+    scroll-snap-type: x mandatory;
     overflow-x: hidden;  
 }
   
   .panel {
-    flex: 0 0 100vw; /* Each panel takes up full viewport width */
-    height: 100vh; /* Each panel takes up full viewport height */
+    flex: 0 0 100vw; 
+    height: 100vh; 
     display: flex;
     justify-content: center;
     align-items: center;
