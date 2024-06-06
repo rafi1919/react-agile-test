@@ -16,14 +16,14 @@ const Card =({name, continent, currency, code, flag, onClick})=>{
                 
                 <Tag continent={continent} />
             </div>
-            <div className=" flex justify-between px-5 text-white">
+            <div className=" flex justify-between lg:px-5 px-2 py-2 text-white">
                 <div className="text-center">
                     <p className="text-sm font-bold">{code}</p>
-                    <p className="text-sm font-light">Code</p>
+                    <p className="lg:text-sm md:text-sm text-xs font-light">Code</p>
                 </div>
                 <div className="text-center">
                     <p className="text-sm font-bold">{currency}</p>
-                    <p className="text-sm  font-light">Currency</p>
+                    <p className="lg:text-sm md:text-sm text-xs  font-light">Currency</p>
                 </div>
             </div>
             <div className="flex justify-center ">
