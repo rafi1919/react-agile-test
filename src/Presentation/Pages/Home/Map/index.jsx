@@ -47,7 +47,7 @@ const Index = () => {
   }, []); 
 
   return (
-    <div className="w-full h-full bg-rose-600 p-5 flex rounded-tr-[45px]">
+    <div className="w-full overflow-hidden h-full bg-rose-600 p-5 flex rounded-tr-[45px]">
       <div ref={cardRef} className="w-full flex justify-center items-center">
         <img src="/image/continent.png" alt="continent" className="lg:w-[600px] md:w-[400px]  w-[300px]  h-auto" />
       </div>

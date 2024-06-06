@@ -43,23 +43,6 @@ const Index =()=> {
       }
     });
 
-    gsap.fromTo('.servicesText-section',{
-      opacity: 0,
-      y: 100
-    }, {
-        opacity: 1,
-        y: 0,
-        duration: 1.5,
-        scrollTrigger: {
-          trigger: ".servicesText-section",
-          start: "top 70%",
-          end: "top center", 
-          scrub: 4,
-          // markers:true
-
-        }
-      });
-
   }, []);
 
   const handleModalOpen = (country) => {
