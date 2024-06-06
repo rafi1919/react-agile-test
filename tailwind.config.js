@@ -7,9 +7,9 @@ module.exports = {
     extend: {
       colors:{
         fire:'#FB6D6C',
-        water:'#76BDFB',
-        leaf:'#49D0B0',
-        elect:'#F5D650',
+        water:'#56AEFB',
+        leaf:'#18CEA3',
+        elect:'#FCD52C',
         ghost:'#645AA4',
         fairy:'#FA8CAA'
       }
